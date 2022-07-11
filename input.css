@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.top-gif{
+    top:calc(50vh - 150px)
+}
+
+.based-animation {
+    animation: based-anim 2s infinite 
+}
+
+@keyframes based-anim {
+    1% {
+        width: 100%
+    }
+    50% {
+        width: 120vw
+    }
+
+    100% {
+        width: 100%
+    }
+}
+.header-position {
+    width: 100vw;
+}
+.header-anim {
+    animation: header-anim 1s infinite
+}
+
+@keyframes header-anim {
+    0% {font-size:xx-large; color: black}
+    12.5% {font-size: 2.25rem; color: violet}
+    25% {font-size: 2.5rem; color:orange}
+    37.5% {font-size: 2.75rem; color: red}
+    50% {font-size: 3rem; color:blue}
+}
